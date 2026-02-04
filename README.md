@@ -15,6 +15,24 @@ A Machine Learning powered web application that predicts the resale price of use
 - ML regression model
 - Railway cloud deployment
 
+## 🛠 Tech Stack
+- Python
+- Flask
+- Scikit-learn
+- Pandas
+- NumPy
+- HTML/CSS
+- Railway
+
+## 🧠 ML Pipeline
+1. Data Cleaning
+2. Feature Engineering
+3. Encoding
+4. Scaling
+5. Model Training
+6. Random Forest Regressor
+7. Deployment with Flask
+
 
 
 

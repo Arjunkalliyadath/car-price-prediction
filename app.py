@@ -1,12 +1,17 @@
 from flask import Flask, render_template, request
 import pickle
 import numpy as np
+import yaml
 
 app = Flask(__name__)
 
-# Load model and scaler
-model = pickle.load(open("car_price_model.pkl", "rb"))
-scaler = pickle.load(open("scaler.pkl", "rb"))
+# Load config
+with open("config.yaml", "r") as file:
+    config = yaml.safe_load(file)
+
+# Load model and scaler using config
+model = pickle.load(open(config["model_path"], "rb"))
+scaler = pickle.load(open(config["scaler_path"], "rb"))
 
 @app.route("/")
 def home():

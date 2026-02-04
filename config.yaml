@@ -1,0 +1,7 @@
+model_path: car_price_model.pkl
+scaler_path: scaler.pkl
+
+debug: true
+host: 0.0.0.0
+port: 5000
+
