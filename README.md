@@ -9,11 +9,12 @@ A Machine Learning powered web application that predicts the resale price of use
 ![Demo](static/images/demo.gif)
 
 ## ✨ Features
-- Predict car price instantly
+- Instant car price prediction
 - Clean animated UI
+- Machine Learning model
 - Flask backend
-- ML regression model
 - Railway cloud deployment
+- Config-based setup (config.yaml)
 
 ## 🛠 Tech Stack
 - Python
@@ -22,7 +23,8 @@ A Machine Learning powered web application that predicts the resale price of use
 - Pandas
 - NumPy
 - HTML/CSS
-- Railway
+- YAML configuration
+- Railway Deployment
 
 ## 🧠 ML Pipeline
 1. Data Cleaning
@@ -32,6 +34,38 @@ A Machine Learning powered web application that predicts the resale price of use
 5. Model Training
 6. Random Forest Regressor
 7. Deployment with Flask
+
+## ⚙️ Run Locally
+
+### Clone repo
+git clone https://github.com/arjunkalliyadath2001/car-price-prediction.git
+
+cd car-price-prediction
+
+### Install dependencies
+pip install -r requirements.txt
+
+### Run app
+python app.py
+
+## 📂 Project Structure
+
+car-price-prediction/
+│
+├── static/images/
+├── templates/index.html
+├── app.py
+├── config.yaml
+├── car_price_model.pkl
+├── scaler.pkl
+├── requirements.txt
+└── README.md
+
+## 📈 Model
+Random Forest Regressor
+
+- R² Score: 0.93
+- MAE: 0.45
 
 
 
