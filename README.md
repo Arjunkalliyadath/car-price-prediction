@@ -6,7 +6,7 @@ A Machine Learning powered web application that predicts the resale price of use
 👉 https://web-production-10eb.up.railway.app/
 
 ## 🎬 Demo Preview
-![Demo](static/images/ScreenRecording2026-02-04101807-ezgif.com-video-to-gif-converter.gif)
+![Demo](static/images/demo.gif)
 
 ## ✨ Features
 - Predict car price instantly
