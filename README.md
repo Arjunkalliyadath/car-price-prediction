@@ -1,11 +1,21 @@
-# Car Price Preiction
-I am predicting the selling price of a car using ML Approach
+# 🚗 Car Price Prediction Web App
 
-<img src = "https://raw.githubusercontent.com/Arjunkalliyadath/car-price-prediction/refs/heads/main/static/images/ScreenRecording2026-02-04101807-ezgif.com-video-to-gif-converter.gif"/>
+A Machine Learning powered web application that predicts the resale price of used cars based on user inputs.
 
-``` bash
-python app.py
-```
-## Checkout the Web App
-Car Prediction App (https://web-production-10eb.up.railway.app/)
+## 🌐 Live Demo
+👉 https://web-production-10eb.up.railway.app/
+
+## 🎬 Demo Preview
+![Demo](static/images/demo.gif)
+
+## ✨ Features
+- Predict car price instantly
+- Clean animated UI
+- Flask backend
+- ML regression model
+- Railway cloud deployment
+
+
+
+
 
