@@ -7,5 +7,5 @@ I am predicting the selling price of a car using ML Approach
 python app.py
 ```
 ## Checkout the Web App
-[Sample App] (https://web-production-10eb.up.railway.app/)
+Car Prediction App (https://web-production-10eb.up.railway.app/)
 
