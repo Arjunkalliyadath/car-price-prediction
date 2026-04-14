@@ -6,7 +6,7 @@ A Machine Learning-powered web application that predicts the **resale price of u
 
 ## 🌐 Live Demo
 
-👉 [https://web-production-10eb.up.railway.app/](https://web-production-10eb.up.railway.app/)
+👉 [https://car-price-prediction-1-wjcu.onrender.com](https://car-price-prediction-1-wjcu.onrender.com)
 
 ---
 
@@ -24,7 +24,7 @@ A Machine Learning-powered web application that predicts the **resale price of u
 - Flask REST backend with a `/predict` POST endpoint
 - Config-driven model loading via `config.yaml`
 - Production-ready with `gunicorn` and a `Procfile`
-- Deployable on Railway or Render
+- Deployable on Render
 
 ---
 
@@ -39,7 +39,7 @@ A Machine Learning-powered web application that predicts the **resale price of u
 | Serving | Gunicorn |
 | Config | PyYAML |
 | Frontend | HTML / CSS |
-| Deployment | Railway / Render |
+| Deployment | Render |
 
 ---
 
@@ -100,12 +100,12 @@ Then open [http://localhost:10000](http://localhost:10000) in your browser.
 
 ---
 
-## 🚀 Deploy to Railway / Render
+## 🚀 Deploy to Render
 
 This app is production-ready out of the box:
 
 - **`Procfile`** — tells the platform to serve with `gunicorn app:app`
-- **Port** — dynamically read from `PORT` environment variable (compatible with both Railway and Render)
+- **Port** — dynamically read from `PORT` environment variable
 
 
 ### Deploy to Render
