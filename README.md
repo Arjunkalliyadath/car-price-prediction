@@ -107,10 +107,6 @@ This app is production-ready out of the box:
 - **`Procfile`** — tells the platform to serve with `gunicorn app:app`
 - **Port** — dynamically read from `PORT` environment variable (compatible with both Railway and Render)
 
-### Deploy to Railway
-1. Push the repo to GitHub
-2. Connect the repo in [Railway](https://railway.app/)
-3. Railway auto-detects the `Procfile` and deploys
 
 ### Deploy to Render
 1. Push the repo to GitHub
