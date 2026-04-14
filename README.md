@@ -1,73 +1,157 @@
 # 🚗 Car Price Prediction Web App
 
-A Machine Learning powered web application that predicts the resale price of used cars based on user inputs.
+A Machine Learning-powered web application that predicts the **resale price of used cars** based on user inputs such as fuel type, transmission, kilometers driven, and more.
+
+---
 
 ## 🌐 Live Demo
-👉 https://web-production-10eb.up.railway.app/
+
+👉 [https://web-production-10eb.up.railway.app/](https://web-production-10eb.up.railway.app/)
+
+---
 
 ## 🎬 Demo Preview
+
 ![Demo](static/images/demo.gif)
 
+---
+
 ## ✨ Features
-- Instant car price prediction
-- Clean animated UI
-- Machine Learning model
-- Flask backend
-- Railway cloud deployment
-- Config-based setup (config.yaml)
+
+- Instant used car price prediction in Indian Rupees (Lakhs)
+- Clean, animated frontend UI
+- Random Forest ML model with **R² Score: 0.93**
+- Flask REST backend with a `/predict` POST endpoint
+- Config-driven model loading via `config.yaml`
+- Production-ready with `gunicorn` and a `Procfile`
+- Deployable on Railway or Render
+
+---
 
 ## 🛠 Tech Stack
-- Python
-- Flask
-- Scikit-learn
-- Pandas
-- NumPy
-- HTML/CSS
-- YAML configuration
-- Railway Deployment
+
+| Layer | Technology |
+|---|---|
+| Language | Python 3 |
+| Web Framework | Flask |
+| ML Library | Scikit-learn 1.6.1 |
+| Data Processing | NumPy, Pandas |
+| Serving | Gunicorn |
+| Config | PyYAML |
+| Frontend | HTML / CSS |
+| Deployment | Railway / Render |
+
+---
 
 ## 🧠 ML Pipeline
-1. Data Cleaning
-2. Feature Engineering
-3. Encoding
-4. Scaling
-5. Model Training
-6. Random Forest Regressor
-7. Deployment with Flask
+
+1. **Data Cleaning** — Handle nulls and outliers
+2. **Feature Engineering** — Car age derived from year; relevant features selected
+3. **Encoding** — Manual one-hot encoding for `fuel_type`, `seller_type`, `transmission`
+4. **Scaling** — StandardScaler applied to all 8 input features
+5. **Model Training** — Random Forest Regressor
+6. **Serialization** — Model and scaler saved as `.pkl` files
+7. **Deployment** — Served via Flask + Gunicorn
+
+---
+
+## 📊 Model Performance
+
+| Metric | Score |
+|---|---|
+| R² Score | 0.93 |
+| MAE | 0.45 Lakhs |
+
+---
+
+## 🔢 Input Features
+
+| Feature | Type | Description |
+|---|---|---|
+| `present_price` | Float | Current ex-showroom price (₹ Lakhs) |
+| `kms_driven` | Float | Total kilometers driven |
+| `owner` | Integer | Number of previous owners (0, 1, 2, 3) |
+| `car_age` | Integer | Age of the car in years |
+| `fuel_type` | Categorical | Petrol / Diesel / CNG |
+| `seller_type` | Categorical | Dealer / Individual |
+| `transmission` | Categorical | Manual / Automatic |
+
+---
 
 ## ⚙️ Run Locally
 
-### Clone repo
-git clone https://github.com/arjunkalliyadath2001/car-price-prediction.git
-
+### 1. Clone the repository
+```bash
+git clone https://github.com/Arjunkalliyadath/car-price-prediction.git
 cd car-price-prediction
+```
 
-### Install dependencies
+### 2. Install dependencies
+```bash
 pip install -r requirements.txt
+```
 
-### Run app
+### 3. Run the app
+```bash
 python app.py
+```
+
+Then open [http://localhost:10000](http://localhost:10000) in your browser.
+
+---
+
+## 🚀 Deploy to Railway / Render
+
+This app is production-ready out of the box:
+
+- **`Procfile`** — tells the platform to serve with `gunicorn app:app`
+- **Port** — dynamically read from `PORT` environment variable (compatible with both Railway and Render)
+
+### Deploy to Railway
+1. Push the repo to GitHub
+2. Connect the repo in [Railway](https://railway.app/)
+3. Railway auto-detects the `Procfile` and deploys
+
+### Deploy to Render
+1. Push the repo to GitHub
+2. Create a new **Web Service** on [Render](https://render.com/)
+3. Set **Start Command** to `gunicorn app:app`
+
+---
 
 ## 📂 Project Structure
 
+```
 car-price-prediction/
 │
-├── static/images/
-├── templates/index.html
-├── app.py
-├── config.yaml
-├── car_price_model.pkl
-├── scaler.pkl
-├── requirements.txt
+├── static/
+│   └── images/
+│       └── demo.gif
+├── templates/
+│   └── index.html
+├── app.py                  # Flask app & prediction logic
+├── config.yaml             # Model and scaler paths
+├── car_price_model.pkl     # Trained Random Forest model
+├── scaler.pkl              # Fitted StandardScaler
+├── requirements.txt        # Python dependencies
+├── Procfile                # Gunicorn entry point for deployment
 └── README.md
+```
 
-## 📈 Model
-Random Forest Regressor
+---
 
-- R² Score: 0.93
-- MAE: 0.45
+## 🔧 Configuration
 
+Model and scaler paths are managed via `config.yaml`, making it easy to swap models without touching the code:
 
+```yaml
+model_path: car_price_model.pkl
+scaler_path: scaler.pkl
+```
 
+---
 
+## 📬 Contact
 
+**Arjun Kalliyadath**
+- GitHub: [@Arjunkalliyadath](https://github.com/Arjunkalliyadath)
