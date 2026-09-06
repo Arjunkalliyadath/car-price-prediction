@@ -107,12 +107,6 @@ This app is production-ready out of the box:
 - **`Procfile`** — tells the platform to serve with `gunicorn app:app`
 - **Port** — dynamically read from `PORT` environment variable
 
-
-### Deploy to Render
-1. Push the repo to GitHub
-2. Create a new **Web Service** on [Render](https://render.com/)
-3. Set **Start Command** to `gunicorn app:app`
-
 ---
 
 ## 📂 Project Structure
@@ -151,3 +145,4 @@ scaler_path: scaler.pkl
 
 **Arjun Kalliyadath**
 - GitHub: [@Arjunkalliyadath](https://github.com/Arjunkalliyadath)
+- Email: arjunkalliyadath2001@gmail.com
