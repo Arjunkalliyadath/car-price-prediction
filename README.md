@@ -100,15 +100,6 @@ Then open [http://localhost:10000](http://localhost:10000) in your browser.
 
 ---
 
-## 🚀 Deploy to Render
-
-This app is production-ready out of the box:
-
-- **`Procfile`** — tells the platform to serve with `gunicorn app:app`
-- **Port** — dynamically read from `PORT` environment variable
-
----
-
 ## 📂 Project Structure
 
 ```
